@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Garden</title>
+   
+    <link rel="stylesheet" href="sih2.css">
+    <style>
+        body{
+            background-image: url('https://assets.simpleviewcms.com/simpleview/image/fetch/c_fill,h_1080,w_1920/f_jpg/q_65/https://media.newmindmedia.com/TellUs/image/%3Ffile%3D_GC09961_web_1722489480.jpg&dh%3D534&dw%3D800&t%3D4');
+           
+
+        }
+    </style>
+   
+</head>
+<body>
+    <header>
+        <div class="virtual-garden">
+            Virtual Herbal Garden
+        </div>
+        <div class="container">
+            <input  id="searchbar" onkeyup="herbal_plants()" type="text"  name="search" placeholder="Search herbs....">
+            <button>🔍</button>
+            
+            <ul id='list'>
+                <li class="herbs">Brahmi</li>
+                <li class="herbs">Triphala</li>
+                <li class="herbs">Ashwagandha</li>
+                <li class="herbs">Guduchi</li>
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="id-cards">
+            
+            <!-- Repeat this block for each ID card -->
+            <div class="id-card">
+                <img src="https://c8.alamy.com/comp/FFXAHK/ayurvedic-medicine-medicinal-plant-brahmi-plant-indian-name-brahmi-FFXAHK.jpg" />
+                <h3>Ayurveda<br>Brahmi</h3>
+                <p>Description of Brahmi</p>
+                <p><a href="brahmi.html"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://m.media-amazon.com/images/I/61BfXc5MGFL.jpg" />
+                <h3>Ayurveda<br>Ashwagandha</h3>
+                <p>Description of Ashwagandha</p>
+                <p><a href="ashwagandha.html"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/kms2j680/plant-seed/m/0/x/10-giloy-stems-guduchi-stems-neem-giloy-stick-tinospora-original-imagfhpgnhasngzc.jpeg?q=20&crop=false" />
+                <h3>Ayurveda<br>Guduchi</h3>
+                <p>Description of Guduchi</p>
+                <p><a href="gudchi.html"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://www.ayurvedaben.com/wp-content/uploads/2018/08/amalaki-emblica-officinalis-indische-stachelbeere.jpg" />
+                <h3>Ayurveda<br>Triphala</h3>
+                <p>Description of Triphala</p>
+                <p><a href="triphala.html"><button>View More</button></a></p>
+            </div>
+            
+            <div class="id-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/2/OX/TE/FK/14339084/aloe-vera-plant-500x500.jpg" />
+                <h3>Homeopathy<br>Alovera</h3>
+                <p>Description of Alovera</p>
+                <p><a href="alovera.html"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://cdnintech.com/media/chapter/81170/1679056428/media/F2.png" />
+                <h3>Homeopathy<br>Turmeric</h3>
+                <p>Description of Turmeric</p>
+                <p><a href="turmeric.html"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://lifestyle.co.za/wp-content/uploads/2018/10/MINT-FLOWER.jpg" />
+                <h3>Homeopathy<br>Mint</h3>
+                <p>Description of Mint</p>
+                <p><a href="mint.html"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://cdn.britannica.com/87/207887-050-F48CB55D/basil.jpg" />
+                <h3>Homeopathy<br>Tulasi</h3>
+                <p>Description of Tulasi</p>
+                <p><a href="tulasi.html"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://www.cosmacon.de/wp-content/uploads/2014/11/Echinacea.jpg" />
+                <h3>Naturopathy<br>Echinacea</h3>
+                <p>Description of Echinacea</p>
+                <p><a href="Echinacea.html"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/kvsfhjk0/plant-sapling/w/k/g/no-perennial-yes-amala-amlaki-fruit-live-plant-cf08-1-cloud-farm-original-imag8m9dmrh7hrsn.jpeg?q=20&crop=fals" />
+                <h3>Naturopathy<br>Amla</h3>
+                <p>Description of Amla</p>
+                <p><a href="amla.html"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://m.media-amazon.com/images/I/71vCdtoqkhL._AC_UF1000,1000_QL80_.jpg" />
+                <h3>Naturopathy<br>Punarnava</h3>
+                <p>Description of Punarnava </p>
+                <p><a href="punarnava.html"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://static.wixstatic.com/media/1e0ed4_14441686c1e947c9ab2787931d640d93~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" />
+                <h3>Naturopathy<br>Peppermint</h3>
+                <p>Description of Peppermint</p>
+                <p><a href="peppermint.html"><button>View More</button></a></p>
+            </div>
+            <!---
+            <div class="id-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/plant-sapling/g/w/u/perennial-yes-yes-neem-plant-0-541-1-plastic-bag-greensford-original-imaggm2feuztgpnp.jpeg?q=90&crop=false" />
+                <h3>Ayurveda-Neem</h3>
+                <p>Description of Neem</p>
+                <p><a href="https://en.wikipedia.org/wiki/Azadirachta_indica"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/plant-sapling/g/w/u/perennial-yes-yes-neem-plant-0-541-1-plastic-bag-greensford-original-imaggm2feuztgpnp.jpeg?q=90&crop=false" />
+                <h3>Ayurveda-Neem</h3>
+                <p>Description of Neem</p>
+                <p><a href="https://en.wikipedia.org/wiki/Azadirachta_indica"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/plant-sapling/g/w/u/perennial-yes-yes-neem-plant-0-541-1-plastic-bag-greensford-original-imaggm2feuztgpnp.jpeg?q=90&crop=false" />
+                <h3>Ayurveda-Neem</h3>
+                <p>Description of Neem</p>
+                <p><a href="https://en.wikipedia.org/wiki/Azadirachta_indica"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/plant-sapling/g/w/u/perennial-yes-yes-neem-plant-0-541-1-plastic-bag-greensford-original-imaggm2feuztgpnp.jpeg?q=90&crop=false" />
+                <h3>Ayurveda-Neem</h3>
+                <p>Description of Neem</p>
+                <p><a href="https://en.wikipedia.org/wiki/Azadirachta_indica"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/plant-sapling/g/w/u/perennial-yes-yes-neem-plant-0-541-1-plastic-bag-greensford-original-imaggm2feuztgpnp.jpeg?q=90&crop=false" />
+                <h3>Ayurveda-Neem</h3>
+                <p>Description of Neem</p>
+                <p><a href="https://en.wikipedia.org/wiki/Azadirachta_indica"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/plant-sapling/g/w/u/perennial-yes-yes-neem-plant-0-541-1-plastic-bag-greensford-original-imaggm2feuztgpnp.jpeg?q=90&crop=false" />
+                <h3>Ayurveda-Neem</h3>
+                <p>Description of Neem</p>
+                <p><a href="https://en.wikipedia.org/wiki/Azadirachta_indica"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/plant-sapling/g/w/u/perennial-yes-yes-neem-plant-0-541-1-plastic-bag-greensford-original-imaggm2feuztgpnp.jpeg?q=90&crop=false" />
+                <h3>Ayurveda-Neem</h3>
+                <p>Description of Neem</p>
+                <p><a href="https://en.wikipedia.org/wiki/Azadirachta_indica"><button>View More</button></a></p>
+            </div>
+            <div class="id-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/plant-sapling/g/w/u/perennial-yes-yes-neem-plant-0-541-1-plastic-bag-greensford-original-imaggm2feuztgpnp.jpeg?q=90&crop=false" />
+                <h3>Ayurveda-Neem</h3>
+                <p>Description of Neem</p>
+                <p><a href="https://en.wikipedia.org/wiki/Azadirachta_indica"><button>View More</button></a></p>
+            </div>-->
+            
+            
+            
+            <!-- Repeat end -->
+        </div>
+    </main>
+    <script src="sih.js"></script>
+    <!---<footer>
+        <p>&copy; 2024 Virtual Garden. All rights reserved.</p>
+    </footer>-->
+
+</body>
+</html>

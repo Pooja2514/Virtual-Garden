@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Garden</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('https://assets.simpleviewcms.com/simpleview/image/fetch/c_fill,h_1080,w_1920/f_jpg/q_65/https://media.newmindmedia.com/TellUs/image/%3Ffile%3D_GC09961_web_1722489480.jpg&dh%3D534&dw%3D800&t%3D4');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-img-top {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 10px auto;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+
+        .card-text {
+            color: #666;
+        }
+
+        .btn-green {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.btn-green:hover {
+    background-color: #218838;
+    color: white;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+
+        .virtual-garden {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #searchbar {
+            width: 50%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="virtual-garden">
+            Virtual Herbal Garden
+        </div>
+        <div class="container">
+            <input id="searchbar" onkeyup="herbal_plants()" type="text" name="search" placeholder="Search herbs....">
+            <button class="btn btn-green">🔍</button>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Repeat this block for each card -->
+            <article class="col-md-4 herbal-card" id="brahmi">
+                <div class="card text-center">
+                    <img src="https://c8.alamy.com/comp/FFXAHK/ayurvedic-medicine-medicinal-plant-brahmi-plant-indian-name-brahmi-FFXAHK.jpg" class="card-img-top" alt="Brahmi Plant">
+                    <div class="card-body">
+                        <h5 class="card-title">Ayurveda<br>Brahmi</h5>
+                        <p class="card-text">Description of Brahmi</p>
+                        <a href="brahmi.html" class="btn btn-green">View More</a>
+                    </div>
+                </div>
+            </article>
+            
+
+            <article class="col-md-4 herbal-card" id="brahmi">
+                <div class="card text-center">
+                    <img src="https://c8.alamy.com/comp/FFXAHK/ayurvedic-medicine-medicinal-plant-brahmi-plant-indian-name-brahmi-FFXAHK.jpg" class="card-img-top" alt="Brahmi Plant">
+                    <div class="card-body">
+                        <h5 class="card-title">Ayurveda<br>Brahmi</h5>
+                        <p class="card-text">Description of Brahmi</p>
+                        <a href="brahmi.html" class="btn btn-green">View More</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="col-md-4 herbal-card" id="brahmi">
+                <div class="card text-center">
+                    <img src="https://c8.alamy.com/comp/FFXAHK/ayurvedic-medicine-medicinal-plant-brahmi-plant-indian-name-brahmi-FFXAHK.jpg" class="card-img-top" alt="Brahmi Plant">
+                    <div class="card-body">
+                        <h5 class="card-title">Ayurveda<br>Brahmi</h5>
+                        <p class="card-text">Description of Brahmi</p>
+                        <a href="brahmi.html" class="btn btn-green">View More</a>
+                    </div>
+                </div>
+            </article>
+            
+
+            <article class="col-md-4 herbal-card" id="brahmi">
+                <div class="card text-center">
+                    <img src="https://c8.alamy.com/comp/FFXAHK/ayurvedic-medicine-medicinal-plant-brahmi-plant-indian-name-brahmi-FFXAHK.jpg" class="card-img-top" alt="Brahmi Plant">
+                    <div class="card-body">
+                        <h5 class="card-title">Ayurveda<br>Brahmi</h5>
+                        <p class="card-text">Description of Brahmi</p>
+                        <a href="brahmi.html" class="btn btn-green">View More</a>
+                    </div>
+                </div>
+            </article>
+            
+
+            <article class="col-md-4 herbal-card" id="brahmi">
+                <div class="card text-center">
+                    <img src="https://c8.alamy.com/comp/FFXAHK/ayurvedic-medicine-medicinal-plant-brahmi-plant-indian-name-brahmi-FFXAHK.jpg" class="card-img-top" alt="Brahmi Plant">
+                    <div class="card-body">
+                        <h5 class="card-title">Ayurveda<br>Brahmi</h5>
+                        <p class="card-text">Description of Brahmi</p>
+                        <a href="brahmi.html" class="btn btn-green">View More</a>
+                    </div>
+                </div>
+            </article>
+            
+
+            <article class="col-md-4 herbal-card" id="brahmi">
+                <div class="card text-center">
+                    <img src="https://c8.alamy.com/comp/FFXAHK/ayurvedic-medicine-medicinal-plant-brahmi-plant-indian-name-brahmi-FFXAHK.jpg" class="card-img-top" alt="Brahmi Plant">
+                    <div class="card-body">
+                        <h5 class="card-title">Ayurveda<br>Brahmi</h5>
+                        <p class="card-text">Description of Brahmi</p>
+                        <a href="brahmi.html" class="btn btn-green">View More</a>
+                    </div>
+                </div>
+            </article>
+            
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Voice Assistant Script -->
+    <script>
+        window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+        const recognition = new SpeechRecognition();
+        recognition.interimResults = true;
+
+        recognition.addEventListener('result', e => {
+            const transcript = Array.from(e.results)
+                .map(result => result[0])
+                .map(result => result.transcript)
+                .join('');
+
+            if (transcript.toLowerCase().includes('search')) {
+                const query = transcript.split('search')[1].trim();
+                document.getElementById('searchbar').value = query;
+                herbal_plants();
+            }
+            
+            console.log(transcript);  // For debugging
+        });
+
+        recognition.addEventListener('end', recognition.start);
+
+        recognition.start();
+
+        function herbal_plants() {
+            const input = document.getElementById('searchbar').value.toLowerCase();
+            const cards = document.getElementsByClassName('herbal-card');
+
+            for (let i = 0; i < cards.length; i++) {
+                cards[i].style.display = 'none';
+            }
+
+            if (input.includes('cold')) {
+                document.getElementById('guduchi').style.display = 'block';
+                document.getElementById('triphala').style.display = 'block';
+                document.getElementById('turmeric').style.display = 'block';
+            } else {
+                for (let i = 0; i < cards.length; i++) {
+                    const title = cards[i].getElementsByClassName('card-title')[0].innerText.toLowerCase();
+                    if (title.includes(input)) {
+                        cards[i].style.display = 'block';
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Garden</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('https://assets.simpleviewcms.com/simpleview/image/fetch/c_fill,h_1080,w_1920/f_jpg/q_65/https://media.newmindmedia.com/TellUs/image/%3Ffile%3D_GC09961_web_1722489480.jpg&dh%3D534&dw%3D800&t%3D4');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-img-top {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 10px auto;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+
+        .card-text {
+            color: #666;
+        }
+
+        .btn-green {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .virtual-garden {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #searchbar {
+            width: 50%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="virtual-garden">
+            Virtual Herbal Garden
+        </div>
+        <div class="container">
+            <input id="searchbar" onkeyup="herbal_plants()" type="text" name="search" placeholder="Search herbs....">
+            <button class="btn btn-green">🔍</button>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="row" id="plant-cards">
+            <!-- Cards will be dynamically generated here based on the search query -->
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Medicinal plants data
+        const medicinalPlants = [
+            {
+                name: "Brahmi",
+                image: "https://c8.alamy.com/comp/FFXAHK/ayurvedic-medicine-medicinal-plant-brahmi-plant-indian-name-brahmi-FFXAHK.jpg",
+                description: "Description of Brahmi",
+                url: "brahmi.html",
+                uses: ["Cold", "Cough", "Memory"]
+            },
+            {
+                name: "Ashwagandha",
+                image: "https://m.media-amazon.com/images/I/61BfXc5MGFL.jpg",
+                description: "Description of Ashwagandha",
+                url: "ashwagandha.html",
+                uses: ["Stress", "Anxiety", "Fatigue"]
+            },
+            {
+                name: "Guduchi",
+                image: "https://www.granniezgreen.com/wp-content/uploads/2021/08/herbs-heart-leaved-moonseed.jpg",
+                description: "Description of Guduchi",
+                url: "gudchi.html",
+                uses: ["Fever", "Jaundice", "Arthritis"]
+            },
+            {
+                name: "Triphala",
+                image: "https://www.ayurvedaben.com/wp-content/uploads/2018/08/amalaki-emblica-officinalis-indische-stachelbeere.jpg",
+                description: "Description of Triphala",
+                url: "triphala.html",
+                uses: ["Digestion", "Constipation", "Detoxification"]
+            },
+            {
+                name: "Alovera",
+                image: "https://5.imimg.com/data5/SELLER/Default/2022/2/OX/TE/FK/14339084/aloe-vera-plant-500x500.jpg",
+                description: "Description of Alovera",
+                url: "alovera.html",
+                uses: ["Skin", "Burns", "Inflammation"]
+            },
+            {
+                name: "Turmeric",
+                image: "https://cdnintech.com/media/chapter/81170/1679056428/media/F2.png",
+                description: "Description of Turmeric",
+                url: "turmeric.html",
+                uses: ["Inflammation", "Pain", "Wound Healing"]
+            }
+        ];
+
+        function herbal_plants() {
+            const searchQuery = document.getElementById('searchbar').value.toLowerCase();
+            const plantCards = document.getElementById('plant-cards');
+            plantCards.innerHTML = '';
+
+            medicinalPlants.forEach(plant => {
+                if (plant.uses.some(use => use.toLowerCase().includes(searchQuery))) {
+                    const card = `
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <img src="${plant.image}" class="card-img-top" alt="${plant.name}">
+                                <div class="card-body">
+                                    <h5 class="card-title">${plant.name}</h5>
+                                    <p class="card-text">${plant.description}</p>
+                                    <a href="${plant.url}" class="btn btn-green">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    plantCards.innerHTML += card;
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
